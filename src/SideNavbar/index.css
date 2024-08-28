@@ -1,0 +1,78 @@
+.setNav{
+    background-color: #333;
+}
+
+.unisLogo{
+    width: 250px;
+    height: 60px;
+    margin: 21px;
+}
+
+.navbar {
+    background-color: rebeccapurple;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.headingUnis{
+    color: #f39c12;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.navbar-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #f39c12;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #f39c12;
+}
+
+.navbar-link:hover::before {
+    width: 100%;
+    left: 0;
+}
