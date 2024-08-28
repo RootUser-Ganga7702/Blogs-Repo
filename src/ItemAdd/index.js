@@ -58,7 +58,7 @@ class AddBlog extends Component{
     const response = await fetch(url, options)
     const data = await response.json()
     if (response.status === 201) {
-      console.log("posted successfully")
+      console.log("Posted successfully")
     }
     }
 
